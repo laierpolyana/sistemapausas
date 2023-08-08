@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pausas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="form-container">
+        <div class="container">
+            <form id="forms" action="">
+                <h1 class="title">Sistema de Pausas</h1>
+                <p>Preencha os dados abaixo para registro de sua pausa internamente.</p>
+
+                <div class="input-single">
+                    <input type="email" id="email-box" pattern =".+@hurb\.com" class="input" required>
+                    <label for="email-box" id="label-email">Seu email @hurb.com</label>
+                </div>
+
+                <div class="input-list">
+                    <select id="pausas-list">
+                        <option value="Pausa 10">Pausa 10</option>
+                        <option value="Pausa 20">Pausa 20</option>
+                        <option value="Pausa Pessoal">Pausa Pessoal</option>
+                        <option value="Carrapato">Carrapato</option>
+                        <option value="Suporte">Suporte</option>
+                    </select>                     
+                </div>
+
+                <div class="btn">
+                    <input type="button" onclick="start()" id="btn-start" value="Start"></input>
+                    <input type="submit" onclick="end()" id="btn-end" value="End"></input>
+                </div>
+                
+                <div class="mensagem">
+                    <p id="mensagem"></p>
+                </div>
+                
+            </form>
+        </div>  
+        <footer class="site-footer">
+            Versão 1.0
+          </footer>
+    </section>    
+    <script src="time.js" defer></script>
+</body>
+</html>
